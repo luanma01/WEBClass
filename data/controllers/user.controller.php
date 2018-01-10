@@ -24,9 +24,9 @@ function checkName(){
 		$users=//获得查询结果
 			mysqli_fetch_all($result,1);//MYSQLI_ASSOC
 		if(count($users)!=0)//如果查询结果中有数据
-			echo "false";//不能使用
+			echo json_encode(["code"=>-1,"msg"=>'ban']);//不能使用
 		else//否则
-			echo "true";//可以使用
+			echo json_encode(["code"=>1,"msg"=>'ok']);//可以使用
 	}
 }
 function login(){
@@ -43,9 +43,9 @@ function login(){
 		if(count($user)!=0){//如果有结果
 			session_start();//打开session
 			$_SESSION["id"]=$user[0]["id"];
-			return true;//登录成功
+			echo json_encode(["code"=>1,"msg"=>'success']);//登录成功
 		}else//否则
-			return false;//登录失败
+            echo json_encode(["code"=>-1,"msg"=>'fail']);//登录失败
 	}
 }
 function logout(){
@@ -61,7 +61,7 @@ function isLogin(){
 			"select uname from classmate where id=$id";
 		$result=mysqli_query($conn,$sql);
 		$user=mysqli_fetch_all($result,1);
-		return ["ok"=>1,"uname"=>$user[0]["uname"]];
+		echo json_encode(["ok"=>1,"uname"=>$user[0]["uname"]]);
 	}else
-		return ["ok"=>0];
+		echo json_encode(["ok"=>0]);
 }

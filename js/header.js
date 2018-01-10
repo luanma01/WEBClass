@@ -8,7 +8,7 @@
 			type:"get",
 			url:"data/routes/isLogin.php"
 		}).then(data=>{//data:{ok:1,uname:xxx}
-			if(data.ok==1){
+			if(data.ok>0){
 				loginList.style.display="none";
 				welcomeList.style.display="flex";
 				document.getElementById("uname").innerHTML=data.uname;
