@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>WEB闲鱼滩</title>
+  <link rel="icon" href="img/fish.png">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/aside.css">
+  <link rel="stylesheet" href="css/video_page.css">
+  <link rel="stylesheet" href="css/footer.css">
+ </head>
+ <body>
+	<div class="main">
+		<header id="header"></header>
+		<nav>
+			<ul id="nav">
+				<li><a href="#">我的位置</a></li>
+				<li><a id="navAddress" href="#">影音</a></li>
+			</ul>
+		</nav>
+		<aside id="aside"></aside>
+		<section>
+			<ul id="rt_nav">
+				<li><h3>我的影音</h3></li>
+				<li>
+					<a href="javascript:;">电影</a>
+					<ul id="movieList">
+						<li><a href="javascript:;">演示动画01</a></li>
+						<li><a href="javascript:;">演示动画02</a></li>
+						<li><a href="javascript:;">口水三国·李儒篇</a></li>
+						<li><a href="javascript:;">口水三国·赵云篇</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">小视频</a>
+					<ul id="videoList">
+						<li>暂无</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div>
+				<video id="video" controls="" preload="none" poster="video/posterM0.png" muted>
+					<source id="mp4" src="video/videoM0.mp4" type="video/mp4">
+<!-- 					<source id="webm" src="images/trailer.webm" type="video/webm"> -->
+<!-- 					<source id="ogv" src="images/trailer.ogv" type="video/ogg"> -->
+<!-- 					<p>Your user agent does not support the HTML5 Video element.</p> -->
+				</video>
+				<!-- 
+				<video id="video" src="http://vid.ly/4m4e2n?content=video" controls="" preload="none" muted>
+				
+
+					<p>Your browser does not support the HTML5 Video element.</p>
+				</video>-->
+			</div>
+		</section>
+		<footer id="footer"></footer>
+	</div>
+  <script src="js/ajax.js"></script>
+  <script src="js/01-ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/aside.js"></script>
+  <script src="js/video_page.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/charlie.js"></script>
+ </body>
+</html>

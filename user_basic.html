@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>WEB闲鱼滩</title>
+  <link rel="icon" href="img/fish.png">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/aside.css">
+  <link rel="stylesheet" href="css/user_basic.css">
+  <link rel="stylesheet" href="css/footer.css">
+ </head>
+ <body>
+	<div class="main">
+		<header id="header"></header>
+		<nav>
+			<ul id="nav">
+				<li><a href="#">我的位置</a></li>
+				<li><a id="navAddress" href="#">个人中心</a></li>
+			</ul>
+		</nav>
+		<aside id="aside"></aside>
+		<section>
+			<div id="information">
+				<h1>个人资料</h1>
+				<form action="" method="post">
+					<table>
+						<tr>
+							<td>用户昵称：</td>
+							<td><input id="txtUname" type="text"></td>
+							<td style="border:1px solid #666;border-radius: 10px;width:200px;" rowspan=5><img src="img/avatar/talents.png" alt="头像" id="imgAvatar"></td>
+						</tr>
+						<tr>
+							<td>姓名：</td>
+							<td><input id="txtName" type="text"></td>
+						</tr>
+						<tr>
+							<td>性别：</td>
+							<td>
+								<input type="radio" value=1 name="gender">男
+								<input type="radio" value=0 name="gender">女
+							</td>
+						</tr>
+						<tr>
+							<td>生日：</td>
+							<td>
+								<input type="text" id="txtBirth">
+							</td>
+						</tr>
+						<tr>
+							<td>微信号：</td>
+							<td>
+								<input type="text" id="txtWeChat">
+							</td>
+						</tr>
+						<tr>
+							<td>头像：</td>
+							<td colspan=2>
+								<input id="txtAvatar" type="file" >
+							</td>
+						</tr>
+					</table>
+					<button>ok</button>
+				</form>
+			</div>
+		</section>
+		<footer id="footer"></footer>
+	</div>
+  <script src="js/ajax.js"></script>
+  <script src="js/01-ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/aside.js"></script>
+  <script src="js/user_basic.js"></script>
+  <script src="js/footer.js"></script>
+ </body>
+</html>

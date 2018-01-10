@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>WEB闲鱼滩</title>
+  <link rel="icon" href="img/fish.png">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/aside.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/forum_page.css">
+ </head>
+ <body>
+	<div class="main">
+		<header id="header"></header>
+		<nav>
+			<ul id="nav">
+				<li><a href="#">我的位置</a></li>
+				<li><a id="navAddress" href="#">聊天室</a></li>
+			</ul>
+		</nav>
+		<aside id="aside">
+			<div id="aside-content">
+				<ul>
+					<li>
+						<dl>
+							<dt><a href=""><img id="avatarImg" src="img/avatar1.png" alt="loading..."></a></dt>
+							<dd>游客模式</dd>
+						</dl>
+					</li>
+					<li><a href="login.html">个人中心</a></li>
+					<li><a href="forum_page.html">聊天室</a></li>
+					<li><a href="read_page.html">阅读</a></li>
+				</ul>
+			</div>
+		</aside>
+		<section>
+			<ul id="show-msg">
+				<li>
+					<p>
+						<span>xx同学：</span>
+						<span>年月日</span>
+					</p>
+					<h3>"hello world"</h3>
+				</li>
+			</ul>
+			<div id="send">
+				<span id="send-uname">游客</span>
+				<input type="text" id="send-msg">
+				<input type="button" id="send_btn" value="发 送">
+			</div>
+		</section>
+		<footer id="footer"></footer>
+	</div>
+  <script src="js/ajax.js"></script>
+  <script src="js/01-ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/aside.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/forum_page.js"></script>
+ </body>
+</html>

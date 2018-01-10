@@ -1,0 +1,40 @@
+section{
+	width:750px;
+	position:relative;
+}
+section h1,section p{
+	color:#efefef;
+}
+section>div{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto auto;
+	width:600px;
+	height:400px;
+    border: 1px solid #efefef;
+    border-radius: 10px;}
+section h1{
+	text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 36px;
+}
+section>div>div{
+	display:flex;
+	justify-content:space-between;
+	width:500px;
+	margin:10px auto;
+}
+section>div img{
+	width:225px;
+}
+section p{
+	margin-top:10px;
+	font-size:20px;
+}
+section p:last-child{
+	text-align:right;
+}
